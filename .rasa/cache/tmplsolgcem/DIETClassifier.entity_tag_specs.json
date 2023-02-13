@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-sentence",
+      "2": "I-sentence",
+      "3": "L-sentence",
+      "4": "U-sentence",
+      "5": "B-to_langg",
+      "6": "I-to_langg",
+      "7": "L-to_langg",
+      "8": "U-to_langg",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-sentence": 1,
+      "I-sentence": 2,
+      "L-sentence": 3,
+      "U-sentence": 4,
+      "B-to_langg": 5,
+      "I-to_langg": 6,
+      "L-to_langg": 7,
+      "U-to_langg": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-target_language",
+      "2": "I-target_language",
+      "3": "L-target_language",
+      "4": "U-target_language",
+      "5": "B-translate_text",
+      "6": "I-translate_text",
+      "7": "L-translate_text",
+      "8": "U-translate_text",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-target_language": 1,
+      "I-target_language": 2,
+      "L-target_language": 3,
+      "U-target_language": 4,
+      "B-translate_text": 5,
+      "I-translate_text": 6,
+      "L-translate_text": 7,
+      "U-translate_text": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "name": "to_langg",
+    "pattern": "(\\bgerman\\b|\\bspanish\\b|\\burdu\\b|\\bhindi\\b|\\bfrench\\b|\\bpersian\\b|\\bdutch\\b|\\bjapanese\\b)"
+  }
+]

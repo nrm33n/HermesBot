@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank_you
+  - translate
+
+entities:
+  - target_language
+  - translate_text
+
+slots:
+  to_lang:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: target_language
+  translate_text:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: translate_text
+
+responses:
+  utter_greet:
+  - text: "hii <3 how are you? \U0001F970"
+
+  utter_cheer_up:
+  - text: "heres something to cheer u up:"
+    image: "https://i.pinimg.com/736x/02/bc/93/02bc93f5a0e46ca0df28d87169a2145a.jpg"
+
+  utter_did_that_help:
+  - text: "did that help?"
+
+  utter_happy:
+  - text: "amazing!!"
+  - text: "thats so great to hear"
+
+  utter_goodbye:
+  - text: "bye bye!!"
+  - text: "see u soon!"
+
+  utter_iamabot:
+  - text: "I'm a translation bot powered by Rasa \U0001F916 Narmeen built me!"
+
+  utter_youre_welcome:
+  - text: "np!"
+  - text: "i got u <3"
+
+  utter_translate:
+  - text: "lmk what to translate!"
+  - text: "ok boss what are we translating"
+
+
+actions:
+  - action_translate_to_lang
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

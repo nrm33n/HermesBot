@@ -1,0 +1,143 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hiii
+    - whatsup
+    - whats poppin
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - byeee
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yessir 
+    - yup
+    - yeah
+    - yuh 
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah 
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so good
+    - so perfect
+    - excellent 
+    - sick 
+    - im doing good! 
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - not great 
+    - pretty bad 
+    - it was rough 
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thank_you
+  examples: |
+    - thanks 
+    - thank you 
+    - ty
+    - thank u
+    - mwah  
+
+- intent: translate 
+  examples: | 
+    - how to say [good morning](translate_text) in [spanish](target_language)
+    - how to say [good evening](translate_text) in [german](target_language)
+    - [hello everyone](translate_text) in [french](target_language)
+    - [nice to meet you](translate_text) in [urdu](target_language)
+    - how to say [what time is it](translate_text) in [urdu](target_language)
+    - translate [goodbye](translate_text) in [german](target_language)
+    - translate [i am sad](translate_text) in [spanish](target_language)
+    - whats [I'm excited to go backpacking]](translate_text) in [swedish](target_language)
+    - can you tell me how to say [i am really hungry](translate_text) in [chinese](target_language)
+    - hey whats [i want to go home](translate_text) in [japanese](target_language)
+    - how do i say [have an amazing day](translate_text) in [chinese](target_language)
+    - could you tell me how to say [im having a bad time](translate_text) in [german](target_langage)
+    - how do i say [what should i do tomorrow](translate_text) in [spanish](target_language)
+    - i forgot how to say [lets have a party on the weekend](translate_text) in [arabic](target_language)
+
+- lookup: target_language
+  examples: | 
+    - german 
+    - spanish
+    - urdu
+    - hindi
+    - french
+    - chinese
+    - dutch
+    - japanese 
+    - portuguese 
+    - arabic

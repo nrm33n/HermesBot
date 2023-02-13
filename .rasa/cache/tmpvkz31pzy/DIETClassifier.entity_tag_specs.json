@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-target_langage",
+      "2": "I-target_langage",
+      "3": "L-target_langage",
+      "4": "U-target_langage",
+      "5": "B-target_language",
+      "6": "I-target_language",
+      "7": "L-target_language",
+      "8": "U-target_language",
+      "9": "B-translate_text",
+      "10": "I-translate_text",
+      "11": "L-translate_text",
+      "12": "U-translate_text",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-target_langage": 1,
+      "I-target_langage": 2,
+      "L-target_langage": 3,
+      "U-target_langage": 4,
+      "B-target_language": 5,
+      "I-target_language": 6,
+      "L-target_language": 7,
+      "U-target_language": 8,
+      "B-translate_text": 9,
+      "I-translate_text": 10,
+      "L-translate_text": 11,
+      "U-translate_text": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

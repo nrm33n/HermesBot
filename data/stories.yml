@@ -1,0 +1,70 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: translate 1 
+  steps: 
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_translate 
+  - intent: translate 
+    entities: 
+    - translate_text: good morning 
+    - target_language: spanish 
+  - action: action_translate_to_lang 
+
+- story: translate 2 
+  steps: 
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_unhappy
+  - action: utter_cheer_up 
+  - action: utter_did_that_help 
+  - intent: affirm 
+  - action: utter_translate 
+  - intent: translate 
+    entities: 
+    - translate_text: goodbye 
+    - target_language: urdu 
+  - action: action_translate_to_lang
+  - intent: thank_you
+  - action: utter_youre_welcome
+
+- story: translate 3
+  steps:
+  - intent: translate 
+    entities: 
+    - translate_text: i want to leave 
+    - target_language: chinese 
+  - action: action_translate_to_lang
+  - intent: thank_you
+  - action: utter_youre_welcome
+
