@@ -1,5 +1,7 @@
 # HermesBot
-<p align="center"> A <a href="https://rasa.com/>Rasa</a>-based chatbot that translates text from English to other languages using the 
+
+<p align="center"> 
+A <a href="https://rasa.com/">Rasa</a>-based chatbot that translates text from English to other languages using the 
   <a href="https://pypi.org/project/translate/">translate</a> Python module. Rasa uses a Dual Intent and Entity Transformer (DIET) for NLP/NLU and trains using min-min and min-max algorithms. HermesBot uses memoization and rule-based policies. I also included an emoji package so it's a little more fun to interact with :zany_face:
 </p>
  
