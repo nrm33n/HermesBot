@@ -2,12 +2,28 @@
 
 <p align="center"> 
 A <a href="https://rasa.com/">Rasa</a>-based chatbot that translates text from English to other languages using the 
-  <a href="https://pypi.org/project/translate/">translate</a> Python module. Rasa uses a Dual Intent and Entity Transformer (DIET) for NLP/NLU and trains using min-min and min-max algorithms. HermesBot uses memoization and rule-based policies. I also included an emoji package so it's a little more fun to interact with :zany_face:
+  <a href="https://pypi.org/project/translate/">translate</a> Python module. 
+  Rasa uses a Dual Intent and Entity Transformer (DIET) for NLP/NLU and trains using min-min and min-max algorithms. HermesBot also uses memoization and rule-based policies. In addition to the translate module, I also included an emoji package so it's a little more fun to interact with :zany_face:
 </p>
+_________________
+
+## Run the bot  
+Since rasa x is no longer free, you can speak to it on the command line by running 
+`rasa run actions` and `rasa shell`on separate terminals. 
+
+## Testing 
+
  
  ## Telegram
  Rasa makes it pretty easy to connect to other voice and chat platforms. Here it is connected to a telegram bot below: 
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/84393679/218571208-0d7a5cfe-2909-40a2-9092-e6ccb3877917.png" width=300 height=700>
+</p>
 
- ![image](https://user-images.githubusercontent.com/84393679/218571208-0d7a5cfe-2909-40a2-9092-e6ccb3877917.png)
+### Connect to Telegram
+Run `ngrok http 5005` to obtain secure remote URL. Use this for webhook_url in credentials.yml file. 
 
+Fill out the other sections by contacting @BotFather on telegram and setting up a new bot. 
+
+Make sure to comment out the rasa localhost url in credentials.yml 
 
