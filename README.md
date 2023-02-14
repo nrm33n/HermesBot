@@ -1,4 +1,4 @@
-# HermesBot
+# HermesBot :cowboy_hat_face:
 
 <p align="center"> 
 A <a href="https://rasa.com/">Rasa</a>-based chatbot that translates text from English to other languages using the 
@@ -11,7 +11,7 @@ Since rasa x is no longer free, you can speak to it on the command line by runni
 `rasa run actions` and `rasa shell`on separate terminals. 
 
 ## Testing 
-In tests (`rasa test`), it's able to identify commands pretty well: 
+In tests, it can identify commands pretty well. Check out the confusion matrix with `rasa test`. The failed tests and other info is in the results folder.
 
 ## Visualization 
 Take a look at the flow of a conversation: 
