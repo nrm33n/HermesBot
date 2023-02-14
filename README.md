@@ -5,18 +5,24 @@ A <a href="https://rasa.com/">Rasa</a>-based chatbot that translates text from E
   <a href="https://pypi.org/project/translate/">translate</a> Python module. 
   Rasa uses a Dual Intent and Entity Transformer (DIET) for NLP/NLU and trains using min-min and min-max algorithms. HermesBot also uses memoization and rule-based policies. In addition to the translate module, I also included an emoji package so it's a little more fun to interact with :zany_face:
 </p>
-_________________
 
 ## Run the bot  
 Since rasa x is no longer free, you can speak to it on the command line by running 
 `rasa run actions` and `rasa shell`on separate terminals. 
 
 ## Testing 
+In tests (`rasa test`), it's able to identify commands pretty well: 
 
- 
- ## Telegram
- Rasa makes it pretty easy to connect to other voice and chat platforms. Here it is connected to a telegram bot below: 
+## Visualization 
+Take a look at the flow of a conversation: 
  <p align="center">
+<img src="https://user-images.githubusercontent.com/84393679/218781894-d4dcb9f8-a9f1-4cf1-a449-4d4141aaea3e.png" width=500 height=500>
+</p>
+
+
+## Telegram
+ Rasa makes it pretty easy to connect to other voice and chat platforms. Here it is as a telegram bot: 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/84393679/218571208-0d7a5cfe-2909-40a2-9092-e6ccb3877917.png" width=300 height=700>
 </p>
 
