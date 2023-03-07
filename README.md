@@ -7,14 +7,14 @@ A <a href="https://rasa.com/">Rasa</a>-based chatbot that translates text from E
 </p>
 
 ## Run the bot  
-Since rasa x is no longer free, you can speak to it on the command line by running 
+Since Rasa x is no longer free, you can speak to it on the command line by running 
 `rasa run actions` and `rasa shell`on separate terminals. 
 
 ## Testing 
 In tests, it can identify commands pretty well. Check out the confusion matrix with `rasa test`. The failed tests and other info is in the results folder.
 
 ## Visualization 
-Take a look at the flow of a conversation: 
+Take a look at the flow of conversation: 
  <p align="center">
 <img src="https://user-images.githubusercontent.com/84393679/218781894-d4dcb9f8-a9f1-4cf1-a449-4d4141aaea3e.png" width=500 height=500>
 </p>
