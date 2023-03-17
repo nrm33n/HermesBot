@@ -19,6 +19,7 @@ Take a look at the flow of conversation:
 <img src="https://user-images.githubusercontent.com/84393679/218781894-d4dcb9f8-a9f1-4cf1-a449-4d4141aaea3e.png" width=500 height=500>
 </p>
 
+You can see this a little clearer in graphs.html.
 
 ## Telegram
  Rasa makes it pretty easy to connect to other voice and chat platforms. Here it is as a telegram bot: 
